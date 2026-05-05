@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Sector 50 - AI 2D Shooter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-shell">
+    <div id="top-bar">
+      <div class="brand">NEON SECTOR <span>50</span></div>
+      <div class="hint">Desktop: A/D or ←/→ • Jump: W/↑ • Shoot: Space/Click • Pause: P<br>Mobile: use on-screen controls</div>
+    </div>
+
+    <div id="canvas-wrap">
+      <canvas id="gameCanvas" width="1280" height="720"></canvas>
+      <div id="mobile-controls" aria-hidden="true">
+        <div class="left-pad">
+          <button data-key="left">◀</button>
+          <button data-key="right">▶</button>
+        </div>
+        <div class="right-pad">
+          <button data-key="jump">▲</button>
+          <button data-key="shoot">●</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
